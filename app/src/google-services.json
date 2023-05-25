@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "719005183959",
+    "firebase_url": "https://bdburgueria-default-rtdb.firebaseio.com",
+    "project_id": "bdburgueria",
+    "storage_bucket": "bdburgueria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719005183959:android:d9f21f20f0174e162c6592",
+        "android_client_info": {
+          "package_name": "com.example.burgueriaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719005183959-9c6vg4pcfprcav4g6s4f3ujt3kn33d04.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.burgueriaapp",
+            "certificate_hash": "7be1e85fc8733bbc80a0de8bad4215f76db0d339"
+          }
+        },
+        {
+          "client_id": "719005183959-qen20iiek975tslv9k9tsofrbjklelhc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlAe9oPl6STe59TbWxxVBX0vWkMQo_d3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "719005183959-qen20iiek975tslv9k9tsofrbjklelhc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

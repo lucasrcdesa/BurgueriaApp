@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BurgueriaApp</string>
+    <string name="salario_texto">Salário         %s</string>
+</resources>

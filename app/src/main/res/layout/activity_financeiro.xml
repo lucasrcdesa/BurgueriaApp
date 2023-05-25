@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.Financeiro">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/bgcolor">
+
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Financeiro"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/gelasioo"
+            />
+
+        <TextView
+            android:id="@+id/salarioTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Salario"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/gelasioo"/>
+
+        <TextView
+            android:id="@+id/salario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1000"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gelasioo"/>
+
+        <TextView
+            android:id="@+id/adicionaisTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Adicionais"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/gelasioo"/>
+
+        <TextView
+            android:id="@+id/adicionais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0,00"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gelasioo"
+            />
+
+        <TextView
+            android:id="@+id/passagemTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Passagem"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/gelasioo"/>
+
+        <TextView
+            android:id="@+id/passagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00,00"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gelasioo"/>
+
+        <TextView
+            android:id="@+id/servicoTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Taxa de serviço"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/gelasioo"/>
+
+        <TextView
+            android:id="@+id/servico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00,00"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gelasioo"/>
+
+        <TextView
+            android:id="@+id/textoConsumacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Consumação"
+            android:textSize="20dp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:fontFamily="@font/gelasioo"/>
+
+        <TextView
+            android:id="@+id/consumacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00,00"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gelasioo"
+            />
+
+        <TextView
+            android:id="@+id/textoVale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Vale"
+            android:textSize="20dp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:fontFamily="@font/gelasioo"/>
+
+        <TextView
+            android:id="@+id/vale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00,00"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gelasioo"/>
+        <TextView
+            android:id="@+id/textoAnterior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Resultado anterior"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gelasioo"
+            />
+        <TextView
+            android:id="@+id/resultadoAnterior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00,00"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gelasioo"
+            />
+        <TextView
+            android:id="@+id/textoAreceber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="A receber"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gelasioo"/>
+        <TextView
+            android:id="@+id/aReceber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00,00"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gelasioo"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

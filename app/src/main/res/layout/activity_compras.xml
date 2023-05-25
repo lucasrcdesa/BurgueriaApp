@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.Tarefas">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/bgcolor">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Compras cozinha"
+                android:textSize="40dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/alface"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alface"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/tomate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tomate"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/maionese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maionese"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/rucula4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rúcula"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+
+
+            <CheckBox
+                android:id="@+id/cebola5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cebola"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/cebolaRoxa6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cebola Roxa"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+            <CheckBox
+                android:id="@+id/abacate7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abacate"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/maracuja8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maracujá"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/sal9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sal"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/carne10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carne"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/bacon11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bacon"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/cheddar12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cheddar"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/coalho13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Queijo Coalho"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/goiabada14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Goiabada"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/chimichurri15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chimichurri"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/paprica16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Páprica"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/jalapeno17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jalapeño"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/luva18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luvas"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/touca19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Touca"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/acoplado20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Papel acoplado"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/kraft21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sacola Kraft"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/frango22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frango"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/onion23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ONION"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"
+                />
+
+            <CheckBox
+                android:id="@+id/queijin24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Queijin"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/coxinha25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coxinha"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/bolinho26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bolinho"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/pastel27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pastel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/batata28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BATATA"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/espetinho29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ESpetinho"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/ingles30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Molho inglês"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/pToalha31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Papel Toalha"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/oleo32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Óleo"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Compras Bar "
+                android:textSize="40dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+            <CheckBox
+                android:id="@+id/coca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coca"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/cocaZero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coca zero"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/guarana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guaraná "
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/guaranaZero4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guaraná Zero"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+
+
+            <CheckBox
+                android:id="@+id/fantaUva5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fanta Uva"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/fantaLaranja6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fanta Laranja"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+            <CheckBox
+                android:id="@+id/sprite7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sprite"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/tonica8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Água Tônica"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/agua9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Água"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/aguaGas10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Água com gás"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/suco11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suco"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/guardanapo12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardanapo"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/ketchup13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ketchup"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/mostarda14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mostarda"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/canudo15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Canudo"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/original16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Original"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/litrao17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Litrão"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/spaten18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spaten"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/stella19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stella"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/heineken20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Heineken"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/becks21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Becks"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/limao22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Limão"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/gelo23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gelo"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"
+                />
+
+            <CheckBox
+                android:id="@+id/acucar24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Açúcar"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/sal25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sal"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/copo26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Copo"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/taca27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Taça"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/cachaca28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cachaça"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/vodka29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vodka"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/redBull30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Red Bull"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/gin31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gin"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/whiskey32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Whiskey"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Produtos Limpeza"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gelasioo"/>
+
+
+            <CheckBox
+                android:id="@+id/sacoGrande1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saco grande"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/sacolaRef2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sacola Refri"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/desinfetante3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Desinfetante"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/papelHig4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Papel Higienico"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+
+
+            <CheckBox
+                android:id="@+id/detergente5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detergente"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/aguasanit6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Água Sanitária"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+            <CheckBox
+                android:id="@+id/sabonete7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sabonete"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/flanela8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flanela"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/produtoMesa9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Produto Mesa"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/rodo10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rôdo"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/vassoura11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vassoura"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+            <CheckBox
+                android:id="@+id/balde12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Balde"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+</androidx.constraintlayout.widget.ConstraintLayout>
