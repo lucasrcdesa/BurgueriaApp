@@ -34,8 +34,8 @@ class   Ponto : AppCompatActivity() {
         myRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 if (dataSnapshot.exists()) {
-                    val value = dataSnapshot.getValue(String::class.java)
-                    textView.text = value
+                    val value = dataSnapshot.getValue(Double::class.java)
+                    textView.text = value.toString()
                 } else {
                     Log.d("Firebase", "O dado não existe")
                 }
