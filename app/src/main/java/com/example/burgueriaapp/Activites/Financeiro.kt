@@ -49,6 +49,7 @@ class Financeiro : AppCompatActivity() {
                         val consumacao = dataSnapshot.child("consumacao").getValue(Double::class.java)
                         val passagem = dataSnapshot.child("passagem").getValue(Double::class.java)
                         val adicionais = dataSnapshot.child("adicionais").getValue(Double::class.java)
+                        val anterior = dataSnapshot.child("anterior").getValue(Double::class.java)
 
                         salarioo.text = salario.toString()
                         servicoo.text = taxaServico.toString()
@@ -56,6 +57,8 @@ class Financeiro : AppCompatActivity() {
                         consumacaoo.text = consumacao.toString()
                         passagemm.text = passagem.toString()
                         adicionaiss.text = adicionais.toString()
+                        anteriorr.text = anterior.toString()
+                        aReceberr.text = (salario!! + taxaServico!! - vale!! + passagem!! + adicionais!! - consumacao!! + anterior!!).toString()
                     }
                     else {
                         Toast.makeText(this@Financeiro,"deu ruim",Toast.LENGTH_LONG).show()

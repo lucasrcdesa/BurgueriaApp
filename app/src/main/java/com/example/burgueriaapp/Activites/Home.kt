@@ -1,15 +1,23 @@
 package com.example.burgueriaapp.Activites
 
 import android.content.Intent
-import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.util.Log
+import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.TextView
 import com.example.burgueriaapp.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.ktx.Firebase
 
-class Home : AppCompatActivity(){
-    private var userId: String? = null
+    class Home : AppCompatActivity(){
         override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -57,30 +65,6 @@ class Home : AppCompatActivity(){
                 startActivity(conss)
             }
 
-            bpon.setOnClickListener {
-                goPont()
-            }
-
-            bfin.setOnClickListener {
-                goPontAdm()
-            }
-
-            bfin.setOnClickListener {
-                goPontFreela()
-            }
-
-            bfin.setOnClickListener {
-                goFin()
-            }
-
-            bfin.setOnClickListener {
-                goFinAdm()
-            }
-
-            bfin.setOnClickListener {
-                goFreela()
-            }
-
 
             if (userId == "Mu0fh5f94pPLlBG5PqYQylKHCX93"|| userId =="DAPQe2cQTIgIDz6SyRkgO8knZy62"){
                 bfin.setOnClickListener {
@@ -120,25 +104,12 @@ class Home : AppCompatActivity(){
             }
 
     }
-        //funções de troca de Activity
+
     fun goFin() {
-            if (userId == "Mu0fh5f94pPLlBG5PqYQylKHCX93" || userId == "DAPQe2cQTIgIDz6SyRkgO8knZy62") {
-                val gooFin = Intent(this, Financeiro::class.java)
+        val gooFin = Intent(this, Financeiro::class.java)
 
-                startActivity(gooFin)
-            }
-            else if (userId == "TqPz0AvBFyOIi08SUUu4HYzYnas1" || userId == "jrQk3pBq3BY3DfoHj5jaVczR6W63"){
-                val gooFinAdm = Intent(this, FinanceiroAdmsActivity::class.java)
-
-                startActivity(gooFinAdm)
-            }
-            else{
-                val gooFree = Intent(this, FreelaFinanceiroActivity::class.java)
-
-                startActivity(gooFree)
-            }
-
-        }
+        startActivity(gooFin)
+    }
 
         fun goFinAdm() {
             val gooFinAdm = Intent(this, FinanceiroAdmsActivity::class.java)
@@ -147,9 +118,9 @@ class Home : AppCompatActivity(){
         }
 
         fun goFreela() {
-            val gooFree = Intent(this, FreelaFinanceiroActivity::class.java)
+            val gooFin = Intent(this, FreelaFinanceiroActivity::class.java)
 
-            startActivity(gooFree)
+            startActivity(gooFin)
         }
 
     fun goComp() {
@@ -169,9 +140,9 @@ class Home : AppCompatActivity(){
             startActivity(gooPontAdm)
         }
         fun goPontFreela() {
-            val gooPontF = Intent(this, PontoFreela ::class.java)
+            val gooPont = Intent(this, PontoFreela ::class.java)
 
-            startActivity(gooPontF)
+            startActivity(gooPont)
         }
     fun goTar() {
         val gooTar = Intent(this, Tarefas ::class.java)
