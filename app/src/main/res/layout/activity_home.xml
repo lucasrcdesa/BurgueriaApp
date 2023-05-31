@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#7A1109"
-    tools:context=".Activites.Home"
-    >
+    tools:context=".Activites.Home">
 
     <ImageButton
         android:id="@+id/bLogout"
@@ -36,7 +35,7 @@
         android:id="@+id/bemVindo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="84dp"
         android:fontFamily="@font/gelasioo"
         android:text="Bem vindo"
         android:textColor="@color/white"
@@ -44,37 +43,13 @@
         android:textStyle="bold"
         app2:layout_constraintEnd_toEndOf="parent"
         app2:layout_constraintStart_toStartOf="parent"
-        app2:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/bfinanc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app2:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical" />
-
-    <Button
-        android:id="@+id/bFinanc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="84dp"
-        android:background="@drawable/custom_button"
-        android:fontFamily="@font/gelasioo"
-        android:text="Financeiro"
-        android:textStyle="bold"
-        app2:layout_constraintBottom_toTopOf="@+id/bCompra"
-        app2:layout_constraintEnd_toEndOf="parent"
-        app2:layout_constraintHorizontal_bias="0.595"
-        app2:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintBottom_toTopOf="@+id/bCompra"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/bemVindo" />
 
     <Button
         android:id="@+id/bCompra"
@@ -85,9 +60,8 @@
         android:text="Lista de compras"
         android:textStyle="bold"
         app2:layout_constraintEnd_toEndOf="parent"
-        app2:layout_constraintHorizontal_bias="0.673"
-        app2:layout_constraintStart_toStartOf="@+id/guideline4"
-        app2:layout_constraintTop_toTopOf="@+id/guideline11"
+        app2:layout_constraintStart_toStartOf="@+id/guideline5"
+        app2:layout_constraintTop_toTopOf="@+id/guideline16"
         app:layout_constraintBottom_toTopOf="@+id/bPonto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -98,20 +72,55 @@
         android:id="@+id/bPonto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:background="@drawable/custom_button"
         android:fontFamily="@font/gelasioo"
         android:text="Ponto"
         android:textStyle="bold"
         app2:layout_constraintEnd_toEndOf="parent"
-        app2:layout_constraintHorizontal_bias="0.581"
-        app2:layout_constraintStart_toStartOf="@+id/guideline4"
-        app2:layout_constraintTop_toBottomOf="@+id/bCompra"
+        app2:layout_constraintStart_toStartOf="@+id/guideline5"
+        app2:layout_constraintTop_toTopOf="@+id/guideline17"
         app:layout_constraintBottom_toTopOf="@+id/bTarefa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/bCompra" />
+
+    <Button
+        android:id="@+id/bFinanc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/gelasioo"
+        android:text="Financeiro"
+        android:textStyle="bold"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.627"
+        app2:layout_constraintStart_toStartOf="@+id/guideline5"
+        app2:layout_constraintTop_toTopOf="@+id/guideline13" />
+
+    <Button
+        android:id="@+id/bConsumacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/gelasioo"
+        android:text="Consumação"
+        android:textStyle="bold"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintStart_toStartOf="@+id/guideline5"
+        app2:layout_constraintTop_toTopOf="@+id/guideline15" />
+
+    <Button
+        android:id="@+id/bTarefas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/gelasioo"
+        android:text="Tarefas"
+        android:textStyle="bold"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintStart_toStartOf="@+id/guideline5"
+        app2:layout_constraintTop_toTopOf="@+id/guideline18" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -143,7 +152,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app2:layout_constraintGuide_percent="0.5" />
+        app2:layout_constraintGuide_percent="0.46" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
@@ -175,6 +184,41 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app2:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app2:layout_constraintGuide_begin="162dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app2:layout_constraintGuide_begin="262dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app2:layout_constraintGuide_begin="365dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app2:layout_constraintGuide_begin="463dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app2:layout_constraintGuide_begin="564dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

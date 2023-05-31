@@ -6,243 +6,229 @@
     android:layout_height="match_parent"
     tools:context=".Activites.Tarefas">
 
-<!--    <ScrollView-->
+    <ScrollView
 
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="1.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="1.0">-->
-
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_margin="30dp"-->
-<!--            android:orientation="vertical">-->
-
-<!--            <TextView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:gravity="center"-->
-<!--                android:text="Tarefas"-->
-<!--                android:textSize="30dp" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
-
-<!--            <CheckBox-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Lavar Louça"-->
-<!--                android:textAlignment="center" />-->
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/bgcolor">
 
 
-<!--        </LinearLayout>-->
-<!--    </ScrollView>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-<!--    <androidx.constraintlayout.widget.Guideline-->
-<!--        android:id="@+id/guideline10"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="vertical"-->
-<!--        app:layout_constraintGuide_percent="0.9" />-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tarefas"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/lista1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fazer Lista"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/copos2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lavar Copos"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/interior3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpar interior da loja"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/pia4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mater pia limpa"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+
+
+    <CheckBox
+        android:id="@+id/troca5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trocar sacos de lixo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/lixos6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpar lixos"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+    <CheckBox
+        android:id="@+id/cardapio7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cardápios limpos"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/mesas8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mesas limpas"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/caixas9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arrumar caixas de cerva"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/balcao10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Organizar Balcao"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/ket11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Organizar mesinha do ketchup"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/praca12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir praça convidativa"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/banheiro13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lavar Banheiros"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/gelar14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Botar estoque para gelar"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/camisinhas15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpar camisinhas"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/porcionar16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Porcionar alimentos"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/validade17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver validade e jogar fora"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/louca18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lavar Louça"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/cozinha19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lavar cozinha"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/tabuas20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpar tábuas"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/Toleo21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trocar óleo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+
+    <CheckBox
+        android:id="@+id/geladeira22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manter coisas na geladeira"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gelasioo"/>
+    </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

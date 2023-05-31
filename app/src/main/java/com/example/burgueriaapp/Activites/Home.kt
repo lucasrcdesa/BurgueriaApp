@@ -1,124 +1,183 @@
 package com.example.burgueriaapp.Activites
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageButton
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.example.burgueriaapp.R
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
-import com.google.firebase.ktx.Firebase
 
-    class Home : AppCompatActivity(){
+class Home : AppCompatActivity(){
+    private var userId: String? = null
         override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
 
-        val bfin = findViewById<Button>(R.id.bFinanc)
-        bfin.setOnClickListener {
-            goFin()
-        }
 
-        val bcom = findViewById<Button>(R.id.bCompra)
-        bcom.setOnClickListener {
-            goComp()
-        }
-
-        val bpon = findViewById<Button>(R.id.bPonto)
-        bpon.setOnClickListener {
-            goPont()
-        }
-
-//        val btar = findViewById<Button>(R.id.bTarefa)
-//        btar.setOnClickListener {
-//            goTar()
-//        }
-
+            val btar = findViewById<Button>(R.id.bTarefas)
+            val bcom = findViewById<Button>(R.id.bCompra)
+            val bfin = findViewById<Button>(R.id.bFinanc)
+            val cons = findViewById<Button>(R.id.bConsumacao)
+            val bpon = findViewById<Button>(R.id.bPonto)
+            val badd = findViewById<ImageButton>(R.id.botAdd)
             val deslog = findViewById<ImageButton>(R.id.bLogout)
+
+            val currentUser = FirebaseAuth.getInstance().currentUser
+            val userId = currentUser?.uid
+
+            // Ir para Tarefas ao clicar no botão
+            btar.setOnClickListener {
+                goTar()
+            }
+
+            // Ir para Compras ao clicar no botão
+            bcom.setOnClickListener {
+                goComp()
+            }
+
+            // Ir para Cadastro ao clicar no botão
+            badd.setOnClickListener {
+                val addd =Intent(this,CadastroUser::class.java)
+                startActivity(addd)
+            }
+
+            // Deslogar ao clicar no botão
             deslog.setOnClickListener {
-                    FirebaseAuth.getInstance().signOut()
-                    val desl = Intent(this, MainActivity::class.java)
-                    startActivity(desl)
-                    finish()
+                FirebaseAuth.getInstance().signOut()
+                val desl = Intent(this, MainActivity::class.java)
+                startActivity(desl)
+                finish()
+            }
+
+            // Ir para Consumação ao clicar no botão
+            cons.setOnClickListener {
+                val conss =Intent(this,ConsumacaoActivity::class.java)
+                startActivity(conss)
+            }
+
+            bpon.setOnClickListener {
+                goPont()
+            }
+
+            bfin.setOnClickListener {
+                goPontAdm()
+            }
+
+            bfin.setOnClickListener {
+                goPontFreela()
+            }
+
+            bfin.setOnClickListener {
+                goFin()
+            }
+
+            bfin.setOnClickListener {
+                goFinAdm()
+            }
+
+            bfin.setOnClickListener {
+                goFreela()
+            }
+
+
+            if (userId == "Mu0fh5f94pPLlBG5PqYQylKHCX93"|| userId =="DAPQe2cQTIgIDz6SyRkgO8knZy62"){
+                bfin.setOnClickListener {
+                    goFin()
                 }
-        val badd = findViewById<ImageButton>(R.id.botAdd)
-        badd.setOnClickListener {
-            val addd =Intent(this,CadastroUser::class.java)
-            startActivity(addd)
+            }
+            else if (userId == "TqPz0AvBFyOIi08SUUu4HYzYnas1" || userId == "jrQk3pBq3BY3DfoHj5jaVczR6W63"){
+                bfin.setOnClickListener {
+                    goFinAdm()
+                }
+            }
+            else {
+                bfin.setOnClickListener {
+                    goFreela()
+                }
+            }
+
+
+
+
+
+
+            if (userId == "Mu0fh5f94pPLlBG5PqYQylKHCX93"|| userId =="DAPQe2cQTIgIDz6SyRkgO8knZy62"){
+                bpon.setOnClickListener {
+                    goPont()
+                }
+            }
+            else if (userId == "TqPz0AvBFyOIi08SUUu4HYzYnas1" || userId == "jrQk3pBq3BY3DfoHj5jaVczR6W63"){
+                bfin.setOnClickListener {
+                    goPontAdm()
+                }
+            }
+            else {
+                bfin.setOnClickListener {
+                    goPontFreela()
+                }
+            }
+
+    }
+        //funções de troca de Activity
+    fun goFin() {
+            if (userId == "Mu0fh5f94pPLlBG5PqYQylKHCX93" || userId == "DAPQe2cQTIgIDz6SyRkgO8knZy62") {
+                val gooFin = Intent(this, Financeiro::class.java)
+
+                startActivity(gooFin)
+            }
+            else if (userId == "TqPz0AvBFyOIi08SUUu4HYzYnas1" || userId == "jrQk3pBq3BY3DfoHj5jaVczR6W63"){
+                val gooFinAdm = Intent(this, FinanceiroAdmsActivity::class.java)
+
+                startActivity(gooFinAdm)
+            }
+            else{
+                val gooFree = Intent(this, FreelaFinanceiroActivity::class.java)
+
+                startActivity(gooFree)
+            }
+
         }
 
-//        val blout = findViewById<Button>(R.id.bLogout)
-//        blout.setOnClickListener {
-//
-//        }
+        fun goFinAdm() {
+            val gooFinAdm = Intent(this, FinanceiroAdmsActivity::class.java)
 
+            startActivity(gooFinAdm)
+        }
 
-//        val database = FirebaseDatabase.getInstance()
-//        val myRef = database.getReference("user/0/diasFalta/1/dia")
-//
-//            myRef.addListenerForSingleValueEvent(object : ValueEventListener {
-//                override fun onDataChange(dataSnapshot: DataSnapshot) {
-//                    // Verifica se o dado existe
-//                    if (dataSnapshot.exists()) {
-//                        // Obtém o valor do DataSnapshot
-//                        val dia = dataSnapshot.getValue(String::class.java)
-//
-//                        // Faça o que desejar com o valor obtido
-//                        Log.d("Firebase", "Valor do dia: $dia")
-//                    } else {
-//                        Log.d("Firebase", "O dado não existe")
-//                    }
-//                }
-//
-//                override fun onCancelled(databaseError: DatabaseError) {
-//                    // Lidar com erros de leitura do Firebase
-//                    Log.e("Firebase", "Erro ao ler dados: ${databaseError.message}")
-//                }
-//            })
-//        myRef.addValueEventListener(object : ValueEventListener{
-//            override fun onDataChange(dataSnapshot: DataSnapshot){
-////                val funcionarios = dataSnapshot.getValue(Funcionarios::class.java)
-//                val func1 = dataSnapshot.getValue(String::class.java)
-//                val x = findViewById<TextView>(R.id.bemVindo)
-//                x.text = "bem vindo ${funcionarios?.nome}"
-//
-//            }
-//        })
-//            val x = findViewById<TextView>(R.id.bemVindo)
-//            x.text = funcionarios?.nome
+        fun goFreela() {
+            val gooFree = Intent(this, FreelaFinanceiroActivity::class.java)
 
-    }
-
-    fun goFin() {
-        val gooFin = Intent(this, Financeiro::class.java)
-
-        startActivity(gooFin)
-    }
+            startActivity(gooFree)
+        }
 
     fun goComp() {
         val gooComp = Intent(this, Compras ::class.java)
 
         startActivity(gooComp)
     }
-    fun goPont() {
+
+        fun goPont() {
         val gooPont = Intent(this, Ponto ::class.java)
 
         startActivity(gooPont)
     }
-//    fun goTar() {
-//        val gooTar = Intent(this, Tarefas ::class.java)
-//
-//        startActivity(gooTar)
-//    }
+        fun goPontAdm() {
+            val gooPontAdm = Intent(this, PontoAdmActivity ::class.java)
+
+            startActivity(gooPontAdm)
+        }
+        fun goPontFreela() {
+            val gooPontF = Intent(this, PontoFreela ::class.java)
+
+            startActivity(gooPontF)
+        }
+    fun goTar() {
+        val gooTar = Intent(this, Tarefas ::class.java)
+
+        startActivity(gooTar)
+    }
 
 
 }

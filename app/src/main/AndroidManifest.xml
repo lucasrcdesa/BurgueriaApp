@@ -15,9 +15,27 @@
         android:theme="@style/Theme.BurgueriaApp"
         tools:targetApi="31">
         <activity
+            android:name=".Activites.PontoFreela"
+            android:exported="false" />
+        <activity
+            android:name=".Activites.PontoAdmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activites.FreelaFinanceiroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activites.FaltaAdmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activites.ConsumacaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activites.FinanceiroAdmsActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activites.CadastroUser"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Activites.Ponto"
             android:exported="false" />

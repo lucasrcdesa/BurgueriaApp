@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.ConsumacaoActivity"
+    android:background="@color/bgcolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Consumação"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/gelasioo"
+            />
+        <TextView
+            android:id="@+id/tituloConsumacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Quem consumiu"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/gelasioo"
+            />
+        <CheckBox
+            android:id="@+id/hudConsumiu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hudshow"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gelasioo"/>
+        <CheckBox
+            android:id="@+id/alexConsumiu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alexera"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gelasioo"/>
+        <CheckBox
+            android:id="@+id/camilaConsumiu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Camila"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gelasioo"/>
+
+        <TextView
+            android:id="@+id/tituloConsum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/gelasioo"
+            android:gravity="center"
+            android:text="Vale ou Consumo"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/foiVale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vale"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gelasioo"/>
+        <CheckBox
+            android:id="@+id/consumoo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consumo"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gelasioo"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="valor"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="40dp"
+            />
+
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
