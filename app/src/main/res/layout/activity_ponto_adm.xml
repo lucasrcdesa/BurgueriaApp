@@ -43,19 +43,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Digite aqui"
-        android:textColorHint="@color/white"/>
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
         <Button
             android:id="@+id/enviarFaltasH"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hudson"
-            android:backgroundTint="@color/black"/>
+            android:backgroundTint="@color/white"
+            android:textColor="@color/bgcolor"
+            />
         <Button
             android:id="@+id/enviarFaltasA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Alex"
-            android:backgroundTint="@color/black"/>
+            android:backgroundTint="@color/white"
+            android:textColor="@color/bgcolor"/>
         <TextView
             android:id="@+id/titsase"
             android:layout_width="match_parent"
@@ -73,19 +77,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Digite aqui"
-            android:textColorHint="@color/white"/>
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
         <Button
             android:id="@+id/enviarAtestadosH"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hudson"
-            android:backgroundTint="@color/black"/>
+            android:backgroundTint="@color/white"
+            android:textColor="@color/bgcolor"/>
         <Button
             android:id="@+id/enviarAtestadosA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Alex"
-            android:backgroundTint="@color/black"/>
+            android:backgroundTint="@color/white"
+            android:textColor="@color/bgcolor"/>
         <TextView
             android:id="@+id/titaaaae"
             android:layout_width="match_parent"
@@ -103,19 +110,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Digite aqui"
-            android:textColorHint="@color/white"/>
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
         <Button
             android:id="@+id/enviarBancoH"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Husdon"
-            android:backgroundTint="@color/black"/>
+            android:backgroundTint="@color/white"
+            android:textColor="@color/bgcolor"/>
         <Button
             android:id="@+id/enviarBancoA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Alex"
-            android:backgroundTint="@color/black"/>
+            android:backgroundTint="@color/white"
+            android:textColor="@color/bgcolor"/>
 
     </LinearLayout>
 

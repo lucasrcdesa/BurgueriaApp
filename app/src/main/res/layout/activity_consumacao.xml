@@ -55,14 +55,6 @@
             android:textAlignment="center"
             android:textColor="@color/white"
             android:fontFamily="@font/gelasioo"/>
-        <CheckBox
-            android:id="@+id/camilaConsumiu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Camila"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:fontFamily="@font/gelasioo"/>
 
         <TextView
             android:id="@+id/tituloConsum"
@@ -85,7 +77,7 @@
             android:textColor="@color/white"
             android:fontFamily="@font/gelasioo"/>
         <CheckBox
-            android:id="@+id/consumoo"
+            android:id="@+id/foiConsumo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Consumo"
@@ -93,12 +85,21 @@
             android:textColor="@color/white"
             android:fontFamily="@font/gelasioo"/>
         <EditText
+            android:id="@+id/valorC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="valor"
             android:textColorHint="@color/white"
             android:layout_marginTop="40dp"
+            android:textColor="@color/white"
             />
+        <Button
+            android:id="@+id/bEnviarConsumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/bgcolor"/>
 
 
 

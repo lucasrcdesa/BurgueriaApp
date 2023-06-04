@@ -63,6 +63,7 @@
             android:layout_height="wrap_content"
             android:hint="Digite aqui"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
             android:textSize="20dp"/>
         <TextView
             android:id="@+id/titedsds"
@@ -81,6 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Digite aqui"
+            android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:textSize="20dp"/>
         <TextView
@@ -101,6 +103,29 @@
             android:layout_height="wrap_content"
             android:hint="Digite aqui"
             android:textColorHint="@color/white"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+        <CheckBox
+            android:id="@+id/hudAdm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hudson"
+            android:textColor="@color/white"/>
+        <CheckBox
+            android:id="@+id/alexAdm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alex"
+            android:textColor="@color/white"/>
+
+
+        <Button
+            android:id="@+id/bAdm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/bgcolor"
+            android:text="Enviar" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

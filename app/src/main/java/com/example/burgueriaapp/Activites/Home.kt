@@ -93,7 +93,7 @@ import com.google.firebase.ktx.Firebase
                 }
             }
             else if (userId == "TqPz0AvBFyOIi08SUUu4HYzYnas1" || userId == "jrQk3pBq3BY3DfoHj5jaVczR6W63"){
-                bfin.setOnClickListener {
+                bpon.setOnClickListener {
                     goPontAdm()
                 }
             }
