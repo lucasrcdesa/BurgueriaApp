@@ -49,9 +49,9 @@ class Compras : AppCompatActivity() {
         val getMIngles = database.getReference("user/0/produtos/produtosCozinha/30/em_falta")
         val getPToalha = database.getReference("user/0/produtos/produtosCozinha/31/em_falta")
         val getOleo = database.getReference("user/0/produtos/produtosCozinha/32/em_falta")
-        val getSaquinho = database.getReference("user/0/produtos/produtosCozinha/32/em_falta")
-        val getSaquinho = database.getReference("user/0/produtos/produtosCozinha/32/em_falta")
-        val getSaquinho = database.getReference("user/0/produtos/produtosCozinha/32/em_falta")
+        val getSaquinho = database.getReference("user/0/produtos/produtosCozinha/33/em_falta")
+        val getPrato = database.getReference("user/0/produtos/produtosCozinha/34/em_falta")
+        val getCarvao = database.getReference("user/0/produtos/produtosCozinha/35/em_falta")
 
 
 
@@ -88,6 +88,7 @@ class Compras : AppCompatActivity() {
         val getRedBull = database.getReference("user/0/produtos/produtosBar/30/em_falta")
         val getGin = database.getReference("user/0/produtos/produtosBar/31/em_falta")
         val getWhiskey = database.getReference("user/0/produtos/produtosBar/32/em_falta")
+        val getCopoP = database.getReference("user/0/produtos/produtosBar/33/em_falta")
 
 
         val getSacoGrande = database.getReference("user/0/produtos/produtosLimpeza/1/em_falta")
@@ -140,6 +141,9 @@ class Compras : AppCompatActivity() {
         val checkBoxMIngles = findViewById<CheckBox>(R.id.ingles30)
         val checkBoxPToalha = findViewById<CheckBox>(R.id.pToalha31)
         val checkBoxOleo = findViewById<CheckBox>(R.id.oleo32)
+        val checkBoxSaquinho = findViewById<CheckBox>(R.id.saquinho33)
+        val checkBoxPrato = findViewById<CheckBox>(R.id.prato34)
+        val checkBoxCarvao = findViewById<CheckBox>(R.id.carvao35)
 
 
 
@@ -175,6 +179,7 @@ class Compras : AppCompatActivity() {
         val checkBoxRedBull = findViewById<CheckBox>(R.id.redBull30)
         val checkBoxGin = findViewById<CheckBox>(R.id.gin31)
         val checkBoxWhiskey = findViewById<CheckBox>(R.id.whiskey32)
+        val checkBoxCopoP = findViewById<CheckBox>(R.id.copoP33)
 
 
         val checkBoxSaco = findViewById<CheckBox>(R.id.sacoGrande1)
@@ -224,7 +229,10 @@ class Compras : AppCompatActivity() {
             getEspetinho to checkBoxEspetinho,
             getMIngles to checkBoxMIngles,
             getPToalha to checkBoxPToalha,
-            getOleo to checkBoxOleo
+            getOleo to checkBoxOleo,
+            getSaquinho to checkBoxSaquinho,
+            getPrato to checkBoxPrato,
+            getCarvao to checkBoxCarvao
         )
 
 
@@ -260,7 +268,8 @@ class Compras : AppCompatActivity() {
             getVodka to checkBoxVodka,
             getRedBull to checkBoxRedBull,
             getGin to checkBoxGin,
-            getWhiskey to checkBoxWhiskey
+            getWhiskey to checkBoxWhiskey,
+            getCopoP to checkBoxCopoP
         )
 
 

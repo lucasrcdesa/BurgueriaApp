@@ -643,6 +643,14 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:fontFamily="@font/gelasioo"/>
+            <CheckBox
+                android:id="@+id/copoP33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Copo Plástico"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
 
         <TextView
             android:layout_width="match_parent"
