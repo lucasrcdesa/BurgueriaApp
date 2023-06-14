@@ -44,7 +44,8 @@
             android:layout_height="wrap_content"
             android:hint="Digite aqui"
             android:textColorHint="@color/white"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
         <TextView
             android:id="@+id/passdssd"
             android:layout_width="match_parent"

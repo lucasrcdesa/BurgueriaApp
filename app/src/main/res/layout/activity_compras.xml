@@ -320,6 +320,30 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:fontFamily="@font/gelasioo"/>
+            <CheckBox
+                android:id="@+id/saquinho33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saquinho de batata"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+            <CheckBox
+                android:id="@+id/prato34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Queijo Prato"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
+            <CheckBox
+                android:id="@+id/carvao35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carvão"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gelasioo"/>
 
 
             <TextView

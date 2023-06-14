@@ -47,48 +47,50 @@ class FinanceiroAdmsActivity : AppCompatActivity() {
     fun enviarFinAdm() {
         val adicionarHud = findViewById<CheckBox>(R.id.hudAdm)
         val adicionarAlex = findViewById<CheckBox>(R.id.alexAdm)
-        if (getSalario == null || getPassagem == null || getAdicionais == null || getServico == null) {
+
+        val salario = getSalario.text.toString()
+        val passagem = getPassagem.text.toString()
+        val adicionais = getAdicionais.text.toString()
+        val servico = getServico.text.toString()
+
+        if (salario.isEmpty() || passagem.isEmpty() || adicionais.isEmpty() || servico.isEmpty()) {
             Toast.makeText(
                 this,
                 "Adicione todos os campos para enviar",
                 Toast.LENGTH_SHORT
             ).show()
         } else {
+            val salarioDouble = salario.toDouble()
+            val passagemDouble = passagem.toDouble()
+            val adicionaisDouble = adicionais.toDouble()
+            val servicoDouble = servico.toDouble()
+
             if (adicionarHud.isChecked) {
                 val hudsonRef = financeiroAdmRef.child("2")
 
-                hudsonRef.child("salario").setValue(getSalario)
-                hudsonRef.child("passagem").setValue(getPassagem)
-                hudsonRef.child("adicionais").setValue(getAdicionais)
-                hudsonRef.child("servico").setValue(getServico)
+                hudsonRef.child("salario").setValue(salarioDouble)
+                hudsonRef.child("passagem").setValue(passagemDouble)
+                hudsonRef.child("adicionais").setValue(adicionaisDouble)
+                hudsonRef.child("servico").setValue(servicoDouble)
 
                 Toast.makeText(
                     this@FinanceiroAdmsActivity,
                     "Valor adicionado",
                     Toast.LENGTH_SHORT
                 ).show()
-
-
-                fun onCancelled(databaseError: DatabaseError) {
-                    Log.e("Firebase", "Erro ao ler dados: ${databaseError.message}")
-                }
             } else if (adicionarAlex.isChecked) {
                 val AlexRef = financeiroAdmRef.child("1")
 
-                AlexRef.child("salario").setValue(getSalario)
-                AlexRef.child("passagem").setValue(getPassagem)
-                AlexRef.child("adicionais").setValue(getAdicionais)
-                AlexRef.child("servico").setValue(getServico)
+                AlexRef.child("salario").setValue(salarioDouble)
+                AlexRef.child("passagem").setValue(passagemDouble)
+                AlexRef.child("adicionais").setValue(adicionaisDouble)
+                AlexRef.child("servico").setValue(servicoDouble)
 
                 Toast.makeText(
                     this@FinanceiroAdmsActivity,
                     "Valor adicionado",
                     Toast.LENGTH_SHORT
                 ).show()
-
-                fun onCancelled(databaseError: DatabaseError) {
-                    Log.e("Firebase", "Erro ao ler dados: ${databaseError.message}")
-                }
             }
         }
     }

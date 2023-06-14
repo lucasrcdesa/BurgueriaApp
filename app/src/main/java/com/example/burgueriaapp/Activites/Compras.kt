@@ -49,6 +49,9 @@ class Compras : AppCompatActivity() {
         val getMIngles = database.getReference("user/0/produtos/produtosCozinha/30/em_falta")
         val getPToalha = database.getReference("user/0/produtos/produtosCozinha/31/em_falta")
         val getOleo = database.getReference("user/0/produtos/produtosCozinha/32/em_falta")
+        val getSaquinho = database.getReference("user/0/produtos/produtosCozinha/32/em_falta")
+        val getSaquinho = database.getReference("user/0/produtos/produtosCozinha/32/em_falta")
+        val getSaquinho = database.getReference("user/0/produtos/produtosCozinha/32/em_falta")
 
 
 
